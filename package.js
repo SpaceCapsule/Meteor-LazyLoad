@@ -7,15 +7,15 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
-    api.add_files('LazyLoad.client.js', 'client');
-    api.add_files('LazyLoad.server.js', 'server');
-    api.add_files('LazyLoad.common.js', ['client', 'server']);
+    api.add_files('lazyload.client.js', 'client');
+    api.add_files('lazyload.server.js', 'server');
+    api.add_files('lazyload.common.js', ['client', 'server']);
 });
 
 Package.on_test(function (api) {
   api.use('tinytest');
   api.use('deps');
   api.add_files('rigtest.js', 'server');
-  api.add_files('LazyLoad.client.js', 'server');
-  api.add_files('LazyLoad.tests.js', 'server');
+  api.add_files('lazyload.client.js', 'server');
+  api.add_files('lazyload.tests.js', 'server');
 });
