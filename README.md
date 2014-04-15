@@ -11,7 +11,7 @@ Its an object holding the parsed querystring.
 `http://localhost:3000?test=Hello`
 
 ```js
-    console.log(LazyLoad.querystring('test')); // Prints "Hello"
+    console.log(LazyLoad.queryString['test']); // Prints "Hello"
 ```
 ###LazyLoad.addFile(filePaths, dependencies)
 `filePaths` - Can be a string or an array of strings
