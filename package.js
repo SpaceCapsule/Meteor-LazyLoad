@@ -10,6 +10,8 @@ Package.on_use(function (api) {
     api.add_files('lazyload.client.js', 'client');
     api.add_files('lazyload.server.js', 'server');
     api.add_files('lazyload.common.js', ['client', 'server']);
+
+    api.export('LazyLoad');
 });
 
 Package.on_test(function (api) {
