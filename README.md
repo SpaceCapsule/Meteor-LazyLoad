@@ -1,4 +1,6 @@
-#LazyLoad
+# DEPRECATED: No longer maintained
+
+# LazyLoad
 This is a small package for loading dependencies when needed.
 It was original built into the Cordova package, since it allows to load the cordova.js specific to the device - why this library still holds the parsed `querystring` making it possible to load files depending on a parametre in the querystring eg. `?cordova=android-2.6.0`
 I've made the code more general adding options for ready events based on dependency or requirement.
